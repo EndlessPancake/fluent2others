@@ -1,8 +1,10 @@
 # fluent2others
-For general purpose fluent Docker Image 
+For general purpose fluent Docker Image **(NOT FOR PRODUCTION)**
 ## build
-- alpine3.13+fluent-1.13.x + 3つのOutput PluginでBuildする
+- alpine3.13 + fluent-1.13.1 + 3つのOutput PluginでBuildする場合
 ```
+ $ git clone https://github.com/isfukuda/fluent2others.git
+ $ cd fluent2others
  $ docker build -t fluent2others:0.0.1 .
 ```
 ## InPut / OutPut
