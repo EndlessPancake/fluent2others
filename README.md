@@ -1,9 +1,9 @@
 # fluent2others
 For general purpose fluent Docker Image 
 ## build
-- alpine3.13+fluent-1.13.x + 各種プラグイン
+- alpine3.13+fluent-1.13.x + 3つのOutput PluginでBuildする
 ```
-$ docker build -t fluent2others:0.0.1 .
+ $ docker build -t fluent2others:0.0.1 .
 ```
 ## InPut / OutPut
 ### plugin追加
