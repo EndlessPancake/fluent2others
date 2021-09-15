@@ -1,10 +1,17 @@
 # fluent2others
-tail plugin to somewhere to Docker Image
+For general purpose fluent Docker Image 
 ## build
-- alpine3.13へfluentと各種プラグイン
+- alpine3.13+fluent-1.13.x + 各種プラグイン
 ```
 $ docker build -t fluent2others:0.0.1 .
 ```
+## InPut / OutPut
+### plugin追加
+- Dockerfileを修正の上、再Buildをお願いします
+### 設定
+- fluent/etc/conf.d/*.conf を読み込む為、適宜Pluginに応じた追加をしてください
+  - e.g. fluent/etc/conf.d/out-machinist.conf
+  - e.g. fluent/etc/conf.d/out-promtheus.conf 
 ## run
 - 起動確認
 ```
